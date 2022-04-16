@@ -5,19 +5,19 @@ let currentDay = moment();
 $('#currentDay').append(currentDay.format('dddd, MMMM Do, h:mm a'));
 
 // Create html elements
-let rows = $('<div>').addClass('work-scheduler-rows');
+let rows = $('<div>').addClass('row');
 let workNotesBlocks = $('<div>').addClass('col-10');
 let noteText = $('<textarea>');
-let timeBlokcs = $('<div>').addClass('col-1 hour');
+let timeBlokcs = $('<div>').addClass('col-1 hour time');
 let saveBtnContainer = $('<div>').addClass('col-1');
-let saveBtn = $('<button>').addClass('save-btn');
+let saveBtn = $('<button>').addClass('saveBtn');
 
 // console.log(rows);
 
 // Function that incorporate the image and render saveBtn functional
 function saveButtonFunc() {
     let img = $("<img src='./assets/images/saveBtn.png'>");
-    img.width(30);
+    img.width(20);
     saveBtn.attr('type', 'submit');
     saveBtn.html(img);
     return saveBtn;

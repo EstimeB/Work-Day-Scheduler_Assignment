@@ -30,7 +30,7 @@ textarea {
   border-radius: 15px;
 }
 
-.work-scheduler-rows {
+.row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -40,6 +40,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: 10px;
 }
 
 .past {
@@ -57,15 +58,26 @@ textarea {
   color: white;
 }
 
-.save-btn {
+.saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height: 79px;
+  width: 100%;
 }
 
-.save-btn i:hover {
+.saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.col-1 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.col-10 {
+  padding-left: 0px;
 }
