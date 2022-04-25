@@ -23,7 +23,7 @@ function initWorkDaySchedProp() {
         // Create html elements
         let rows = $('<div>').addClass('row');
         let workNotesBlocks = $('<div>').addClass('col-10');
-        let noteText = $('<textarea>');
+        let noteText = $('<textarea>').addClass('col-12');
         let timeBlokcs = $('<div>').addClass('col-1 hour time');
         let saveBtnContainer = $('<div>').addClass('col-1');
 
