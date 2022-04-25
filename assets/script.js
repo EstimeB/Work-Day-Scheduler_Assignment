@@ -58,6 +58,41 @@ function initWorkDaySchedProp() {
         $('#currentDay').html(currentDay.format('dddd, MMMM Do, h:mm a'));
     }, 1000);
 
+    // Loading existing data from local storage
+    function loadData() {
+        $("#hour-9").text(localStorage.getItem("hour-9"));
+        $("#hour-10").text(localStorage.getItem("hour-10"));
+        $("#hour-11").text(localStorage.getItem("hour-11"));
+        $("#hour-12").text(localStorage.getItem("hour-12"));
+        $("#hour-13").text(localStorage.getItem("hour-13"));
+        $("#hour-14").text(localStorage.getItem("hour-14"));
+        $("#hour-15").text(localStorage.getItem("hour-15"));
+        $("#hour-16").text(localStorage.getItem("hour-16"));
+        $("#hour-17").text(localStorage.getItem("hour-17"));
+    }
+    loadData();
+
+    // Event listener to take and save data to local storage
+    $(".saveBtn").on("click", function () {
+        let h9 = $("#hour-9").val().trim();
+        localStorage.setItem("hour-9", (h9));
+        let h10 = $("#hour-10").val().trim();
+        localStorage.setItem("hour-10", (h10));
+        let h11 = $("#hour-11").val().trim();
+        localStorage.setItem("hour-11", (h11));
+        let h12 = $("#hour-12").val().trim();
+        localStorage.setItem("hour-12", (h12));
+        let h13 = $("#hour-13").val().trim();
+        localStorage.setItem("hour-13", (h13));
+        let h14 = $("#hour-14").val().trim();
+        localStorage.setItem("hour-14", (h14));
+        let h15 = $("#hour-15").val().trim();
+        localStorage.setItem("hour-15", (h15));
+        let h16 = $("#hour-16").val().trim();
+        localStorage.setItem("hour-16", (h16));
+        let h17 = $("#hour-17").val().trim();
+        localStorage.setItem("hour-17", (h17));
+    });
 }
 initWorkDaySchedProp();
 
